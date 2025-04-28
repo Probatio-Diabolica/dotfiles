@@ -1,0 +1,92 @@
+[colors.primary]
+background = "#0f0f0f"   # Almost black background
+foreground = "#c0c0c0"   # Soft gray for readability
+
+[colors.cursor]
+text = "#0f0f0f"
+cursor = "#ffcc00"
+
+[colors.normal]
+black   = "#0f0f0f"
+red     = "#ff5555"  # Neon red
+green   = "#50fa7b"  # Cyber green
+yellow  = "#f1fa8c"  # Electric yellow
+blue    = "#bd93f9"  # Cyberpunk blue
+magenta = "#ff79c6"  # Neon pink
+cyan    = "#8be9fd"  # Electric cyan
+white   = "#bbbbbb"  # Soft white
+
+[colors.bright]
+black   = "#4d4d4d"
+red     = "#ff6e67"
+# green   = "#f4f5f6"
+green   = "#5af78e"
+yellow  = "#f4f99d"
+# blue    = "#0009fa"
+blue    = "#caa9fa"
+magenta = "#ff92d0"
+cyan    = "#9aedfe"
+# white   = "#00ff34"
+white   = "#ffffff"
+
+
+# Alacritty Configuration - ~/.config/alacritty/alacritty.toml
+
+#[window]
+#opacity = 0.95  # 95% opacity for a slightly transparent look
+#blur = true     # Enable blur if your compositor supports it
+#padding = { x = 10, y = 10 }  # Add some padding
+#
+#[font]
+#normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+#bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+#italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+#size = 12.0  # Adjust font size as needed
+#
+#[colors]
+## Catppuccin Mocha Theme
+#[colors.primary]
+#background = "#1e1e2e"
+#foreground = "#cdd6f4"
+#
+#[colors.cursor]
+#text = "#1e1e2e"
+#cursor = "#f5e0dc"
+#
+#[colors.normal]
+#black = "#45475a"
+#red = "#f38ba8"
+#green = "#a6e3a1"
+#yellow = "#f9e2af"
+#blue = "#89b4fa"
+#magenta = "#f5c2e7"
+#cyan = "#94e2d5"
+#white = "#bac2de"
+#
+#[colors.bright]
+#black = "#585b70"
+#red = "#f38ba8"
+#green = "#a6e3a1"
+#yellow = "#f9e2af"
+#blue = "#89b4fa"
+#magenta = "#f5c2e7"
+#cyan = "#94e2d5"
+#white = "#a6adc8"
+#
+#[bell]
+#animation = "EaseOutExpo"
+#duration = 100
+#
+#[scrolling]
+#history = 10000  # Set scrollback buffer
+#
+#[selection]
+#save_to_clipboard = true  # Auto-copy selected text
+#
+#[keyboard]
+#bindings = [
+#    { key = "C", mods = "Control|Shift", action = "Copy" },
+#    { key = "V", mods = "Control|Shift", action = "Paste" },
+#    { key = "Enter", mods = "Control|Shift", action = "SpawnNewInstance" },
+#    { key = "Q", mods = "Control|Shift", action = "Quit" }
+#]
