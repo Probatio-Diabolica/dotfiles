@@ -1,3 +1,9 @@
+# Dependencies
+>* grim
+>* waypaper
+>* gnome-keyring 
+>* libsecret
+>* seahorse
 # Screenshots
 > Home
 ![home](screenshots/casual.png)
