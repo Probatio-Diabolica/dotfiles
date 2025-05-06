@@ -17,7 +17,7 @@ window#waybar {
 .modules-left {
     background: rgb(40, 40, 40);
     border-radius: 15px;
-    margin: 0 5px;
+    margin: 0 0px;
     padding: 0 5px;
 }
 
@@ -31,7 +31,7 @@ window#waybar {
 .modules-right {
     background: rgb(40, 40, 40);
     border-radius: 15px;
-    margin: 0 5px;
+    margin: 0 0px;
     padding: 0 5px;
 }
 
@@ -41,14 +41,14 @@ window#waybar {
 
 #workspaces button {
     padding: 0 8px;
-    color: #ebdbb2;
+    color: rgba(161,154,235,1);
     border: 3px solid rgba(9, 85, 225, 0);
     border-radius: 10px;
     min-width: 33px;
 }
 
 #workspaces button.visible {
-    color: #689d6a;
+    color: rgba(192,105,181,1);
 }
 
 #workspaces button.focused {
@@ -63,8 +63,8 @@ window#waybar {
 
 #workspaces button:hover {
     box-shadow: inherit;
-    border-color: #8ec07c;
-    color: #8ec07c;
+    border-color: #7aa2f7;
+    color: #4f4ce6;
 }
 
 /* Repeat style here to ensure properties are overwritten as there's no !important and button:hover above resets the colour */
@@ -81,8 +81,8 @@ window#waybar {
 	margin: 2px 7px 0px 7px;
 	color:#ee2e24;
 }
-
-#tray
+#custom-arch,
+#tray,
 #mode,
 #battery,
 #temperature,
@@ -103,13 +103,18 @@ window#waybar {
 #custom-media {
     margin: 0px;
     padding: 0 5px;
+    color: #bb9af7;
 }
 
-#cpu {
+#clock {
+    padding: 0 5px;
+    color: #bb9af7;
+}
+/* #cpu {
     color: rgba(215, 153, 33, 1);
-}
+} */
 
-#memory {
+/* #memory {
     color: rgba(69, 133, 136, 1);
 }
 
@@ -128,15 +133,15 @@ window#waybar {
 #clock {
     padding: 0 5px;
     color: rgba(104, 157, 106, 1);
+    
 }
-
 #backlight {
     color: rgba(177, 98, 134, 1);
 }
 
 #battery {
     color: rgba(152, 151, 26, 1);
-}
+} */
 
 #battery.warning {
     color: rgba(215, 153, 33, 1);
@@ -158,11 +163,15 @@ window#waybar {
     color: rgba(238, 46, 36, 1);
 }
 
-#custom-notification{
-    font-size: 28; 
-    color: rgb(149, 6, 168);
-}
+/* #custom-notification{
+    font-size: 18; 
+    color: rgb(149, 6, 168); 
+} */
 
+#custom-arch{
+    color:rgba(191, 82, 107,1);
+    font-size: 18px;
+}
 @keyframes blink {
     to {
         background-color: #ffffff;

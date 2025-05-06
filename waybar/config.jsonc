@@ -7,21 +7,22 @@
     "spacing": 5, // Gaps between modules (4px)
     // Choose the order of the modules
 
-    //will adjust it to my liking
     "modules-left": [
-        "power-profiles-daemon",
-	"cpu",
-	"memory",
-	"temperature"
+     "custom/arch",
+	"hyprland/workspaces"
     ],
+
+    //will adjust it to my liking
     "modules-center": [
-        "idle_inhibitor",
-	"hyprland/workspaces",
+        "power-profiles-daemon",
+        "clock"
     ],
+
     "modules-right": [
+        "cpu",
+        "temperature",
         "pulseaudio",
         "network",
-        "clock",
         "backlight",
         "battery",
         "custom/notification"
@@ -31,10 +32,14 @@
         "capslock": true,
         "format": "{name} {icon}",
         "format-icons": {
-            "locked": "",
-            "unlocked": ""
+            "locked": " ",
+            "unlocked": " "
         }
     },
+    "custom/arch": {
+        "format": " 󰣇 ",
+        "tooltip": false
+      },
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
@@ -74,8 +79,8 @@
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "activated": "",
-            "deactivated": ""
+            "activated": " ",
+            "deactivated": " "
         }
     },
     "tray": {
@@ -84,12 +89,12 @@
     },
     "clock": {
         // "timezone": "America/New_York",
-	"format": "󰥔 {:%H:%M}",
+	"format": "󰥔  {:%H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "󰸗 {:%Y-%m-%d}"
+        "format-alt": "󰸗  {:%Y-%m-%d}"
     },
     "cpu": {
-        "format": " {usage}% ",
+        "format": "  {usage}% ",
         "tooltip": false,
     },
     "memory": {
@@ -106,8 +111,8 @@
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "{icon} {percent}%",
-        "tooltip-format": "Brigthness {percent}%",
+        "format": " {icon} ",
+        "tooltip-format": "Brigthness",
         "format-icons": ["󰃞", "󰃞", "󰃟", "󰃝", "󰃠"]
     },
     "battery": {
@@ -119,41 +124,42 @@
         "format": "{icon} {capacity}%",
         "format-full": "{icon} {capacity}%",
         "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}% ",
-        "format-alt": "{time} {icon}",
-        "format-good": " {capacity}%", // An empty format will hide the module
-        "format-full": " {capacity}%",
-        "format-icons": ["", "", "", "", ""]
+        "format-plugged": "  {capacity}% ",
+        "format-alt": "{time}  {icon}",
+        "format-good": " ", // An empty format will hide the module
+        "format-full": " ",
+        "format-icons": ["", "", "", "", ""],
+        
     },
     "battery#bat2": {
         "bat": "BAT2"
     },
     "power-profiles-daemon": {
-      "format": "{icon}",
-      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-      "tooltip": true,
-      "format-icons": {
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
         "default": "",
         "performance": "",
         "balanced": "",
         "power-saver": ""
-      }
+        }
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         // "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-wifi": "󰖩 {signalStrength}%",
+        "format-wifi": "󰖩",
         "format-ethernet": "{ipaddr}/{cidr} ",
         // "tooltip-format": "{ifname} via {gwaddr} ",
         "tooltip-format":"{essid}",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "󰖪 Disconnected ",
-        "format-alt": "<span foreground='#77ffcc'> {bandwidthDownBytes}</span>  <span foreground='#ffcc66'> {bandwidthUpBytes}</span>"
+        "format-disconnected": "󰖪",
+        "format-alt": "<span foreground='#77ffcc'>  {bandwidthDownBytes}</span>  <span foreground='#ffcc66'>  {bandwidthUpBytes}</span>"
         // "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{icon} {volume}%",
+        "format": "{icon}  {volume}%",
         //"format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
@@ -185,12 +191,12 @@
     },
     "custom/notification": {
         "tooltip": false,
-        "format": "{icon}",
+        "format": "{icon} ",
         "format-icons": {
           "notification": "<span foreground='#dc8a78'></span><span foreground='red'><sup></sup></span>",
           "none": "",
           "dnd-notification": " <span foreground='red'><sup> </sup></span>",
-          "dnd-none": " ",
+          "dnd-none": "",
           "inhibited-notification": "<span foreground='red' <sup> </sup></span>",
           "inhibited-none": "",
           "dnd-inhibited-notification": " <span foreground='red'><sup> </sup></span>",

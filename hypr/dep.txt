@@ -1,0 +1,5 @@
+grim
+waypaper
+gnome-keyring 
+libsecret
+seahorse
