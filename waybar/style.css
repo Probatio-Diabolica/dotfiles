@@ -16,12 +16,14 @@ window#waybar {
 
 .modules-left {
     background: rgb(40, 40, 40);
+    /* background:black; */
     border-radius: 15px;
     margin: 0 0px;
     padding: 0 5px;
 }
 
 .modules-center {
+    /* background: black; */
     background: rgb(40, 40, 40);
     border-radius: 15px;
     margin: 0 5px;
@@ -29,6 +31,7 @@ window#waybar {
 }
 
 .modules-right {
+    /* background: black; */
     background: rgb(40, 40, 40);
     border-radius: 15px;
     margin: 0 0px;
@@ -169,7 +172,7 @@ window#waybar {
 } */
 
 #custom-arch{
-    color:rgba(191, 82, 107,1);
+    color:rgb(191, 82, 107);
     font-size: 18px;
 }
 @keyframes blink {

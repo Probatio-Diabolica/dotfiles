@@ -154,7 +154,7 @@
         "tooltip-format":"{essid}",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "󰖪",
-        "format-alt": "<span foreground='#77ffcc'>  {bandwidthDownBytes}</span>  <span foreground='#ffcc66'>  {bandwidthUpBytes}</span>"
+        "format-alt": "<span foreground='#bb9ad7'>  {bandwidthDownBytes}</span>  <span foreground='#bb9af7'>  {bandwidthUpBytes}</span>"
         // "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
@@ -173,7 +173,7 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""]
+            "default": ["", "", " "]
         },
         "on-click": "pavucontrol"
     },
