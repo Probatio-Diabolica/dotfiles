@@ -1,5 +1,5 @@
 * {
-    font-family: 'CaskaydiaCove Nerd Font Mono';
+    font-family: 'CaskaydiaMono Nerd Font';
     font-size: 16px;
     font-weight: bold;
 }
@@ -11,12 +11,13 @@ window#waybar {
     text-shadow: none;
     transition-duration: 0s;
     color: rgba(235, 219, 178, 1);
-    background: rgba(40, 40, 40, 0.5);
+    background: rgba(40, 40, 40, 0.9);
 }
 
 .modules-left {
-    background: rgb(40, 40, 40);
+    /* background: rgb(40, 40, 40); */
     /* background:black; */
+    /* background:black;  */
     border-radius: 15px;
     margin: 0 0px;
     padding: 0 5px;
@@ -24,7 +25,7 @@ window#waybar {
 
 .modules-center {
     /* background: black; */
-    background: rgb(40, 40, 40);
+    /* background: rgb(40, 40, 40); */
     border-radius: 15px;
     margin: 0 5px;
     padding: 0 5px;
@@ -32,7 +33,7 @@ window#waybar {
 
 .modules-right {
     /* background: black; */
-    background: rgb(40, 40, 40);
+    /* background: rgb(40, 40, 40); */
     border-radius: 15px;
     margin: 0 0px;
     padding: 0 5px;
@@ -172,7 +173,7 @@ window#waybar {
 } */
 
 #custom-arch{
-    color:rgb(191, 82, 107);
+    color:#bf526b;
     font-size: 18px;
 }
 @keyframes blink {
